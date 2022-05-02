@@ -1,0 +1,74 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "react",
+        "react-hooks",
+        "jest",
+        "testing-library",
+        "eslint-plugin-prettier",
+        "jsx-a11y"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:jest/recommended",
+        "plugin:testing-library/react",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "classes": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+        "es6": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "rules": {
+        "no-undef": 2,
+        "global-strict": 0,
+        "no-underscore-dangle": 0,
+        "no-console": 1,
+        "@typescript-eslint/no-unused-vars": 1,
+        "@typescript-eslint/no-inferrable-types": 0,
+        "@typescript-eslint/no-namespace": 0,
+        "no-unreachable": 1,
+        "no-alert": 0,
+        "react/jsx-uses-vars": 2,
+        "react/jsx-no-bind": [
+            1,
+            {
+                "ignoreRefs": true,
+                "allowArrowFunctions": true
+            }
+        ],
+        "react/jsx-no-duplicate-props": 1,
+        "react/jsx-key": 1,
+        "react/jsx-no-undef": 1,
+        "react/jsx-pascal-case": 1,
+        "react/jsx-filename-extension": 0,
+        "react/no-did-mount-set-state": 0,
+        "react/no-did-update-set-state": 1,
+        "react/no-direct-mutation-state": 2,
+        "react/no-unknown-property": 1,
+        "react/prefer-es6-class": 1,
+        "react/prop-types": 1,
+        "react/self-closing-comp": 1,
+        "react/jsx-uses-react": 2,
+        "testing-library/no-container": ["warn"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "ignorePatterns": ["node_modules", ".vscode", ".idea"]
+}
