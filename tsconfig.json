@@ -24,12 +24,10 @@
         "esModuleInterop": true,
         "typeRoots": ["./node_modules/@types"],
         "resolveJsonModule": true,
-        "types": ["typePatches", "jest", "node", "@testing-library/jest-dom"]
+        "types": ["jest", "node", "@testing-library/jest-dom"]
     },
     "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "jest"],
-    "types": ["typePatches"],
     "globals": {
         "JSX": true
-    },
-    "files": ["./typings.d.ts"]
+    }
 }

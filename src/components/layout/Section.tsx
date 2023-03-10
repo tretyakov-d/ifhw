@@ -8,8 +8,6 @@ export interface SectionProps {
 
 export const Section = ({ children, className }: SectionProps) => {
     return (
-        <section className={classnames('if section', className)}>
-            {children}
-        </section>
+        <div className={classnames('if section', className)}>{children}</div>
     );
 };

@@ -8,7 +8,7 @@
   - Use any testing framework to write unit tests.
   - Do not use public source code repositories like GitHub but store the source code in any cloud storage or send via   email as an attachment.
 
-1. Build ”Policies” section
+1. Build ”PoliciesPage” section
 
    - Implement policy card list view
    - As image assets are not provided, use any that you see fit for design

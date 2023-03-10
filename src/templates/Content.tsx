@@ -1,27 +1,11 @@
-import React, { ReactNode } from 'react';
+import React, { PropsWithChildren } from 'react';
 import { Outlet } from 'react-router-dom';
-import styled from 'styled-components';
-import classnames from 'classnames';
 
-interface IfMainProps {
-    children: ReactNode;
-    className?: string;
-}
-
-const IfMain = ({ children, className }: IfMainProps) => {
-    return <main className={classnames('if main', className)}>{children}</main>;
-};
-const Main = styled(IfMain)`
-    &&& {
-        background-color: #f6f3f0;
-    }
-`;
-
-export const Content = ({ children }: { children?: ReactNode }) => {
+export const Content = ({ children }: PropsWithChildren) => {
     return (
-        <Main>
+        <main className={'if main'}>
             {children}
             <Outlet />
-        </Main>
+        </main>
     );
 };
